@@ -1,0 +1,92 @@
+:root 
+{
+    /* Fontes */
+    --din: "DIN", sans-serif;
+}
+
+@font-face 
+{
+    font-family: "DIN";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fontes/dinr.otf") format("opentype");
+}
+
+@font-face 
+{
+    font-family: "DIN";
+    font-style: italic;
+    font-weight: normal;
+    src: url("../fontes/dinri.otf") format("opentype");
+}
+
+@font-face 
+{
+    font-family: "DIN";
+    font-style: normal;
+    font-weight: bold;
+    src: url("../fontes/dinb.otf") format("opentype");
+}
+
+body 
+{
+    font-family: var(--din);
+    font-size: 1em;
+}
+
+fieldset, form
+{
+  border: none;
+}
+
+form
+{
+ background-color: silver;
+ width: 400px;
+}
+
+input, select, textarea 
+{
+   -webkit-appearance: none;
+   -moz-appearance:    none;
+   appearance:         none;
+
+   background-color: #e6e6e6;
+   border: hsl(0, 0%, 79%) 1px solid;
+   border-radius: 4px;
+   color: #3f3f3f;
+   font-family: var(--din);
+}
+
+input[type="submit"]
+{
+ background-color: slategray;
+ border: none;
+ display: block;
+ color: #dde4ed;
+ margin: 0 auto;
+ text-align: center;
+}
+
+label 
+{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.settings 
+{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 5px;
+}
+
+.settings label 
+{
+    text-align: right;
+}
+
+.settings label:after 
+{
+    content: ":";
+}

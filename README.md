@@ -1,2 +1,3 @@
 # Email-PHP
-3 diferentes forms para enviar email com o php
+
+## 3 diferentes formas para enviar e-mail em PHP
